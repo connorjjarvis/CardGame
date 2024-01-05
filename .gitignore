@@ -3,6 +3,5 @@
 ################################################################################
 
 /.vs
-/CardGame/obj
-/CardGame/bin/Debug/net8.0
-/CardGame/Board.cs
+/*/obj
+/*/bin
