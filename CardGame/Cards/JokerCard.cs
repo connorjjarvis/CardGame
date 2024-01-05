@@ -15,8 +15,8 @@ namespace CardGame.Cards
 
         public JokerCard()
         {
-            Suit = "J";
-            Value = "K";
+            Suit = "K";
+            Value = "J";
             Score = 0;
         }
 

@@ -26,7 +26,7 @@ namespace CardGame.Tests
         {
             player.AddCard(CardFactory.CreateCard("J", "K"));
             player.AddCard(CardFactory.CreateCard("J", "K"));
-            Assert.AreEqual(2, player.Hand.Count(t => t.Suit == "J" && t.Value == "K"));
+            Assert.AreEqual(2, player.Hand.Count(t => t.Value == "J" && t.Suit == "K"));
         }
 
         [Test]
@@ -63,7 +63,7 @@ namespace CardGame.Tests
         public void ValidJokerCardScore()
         {
             player.AddCard(CardFactory.CreateCard("J", "K"));
-            Assert.AreEqual(0, player.Hand.First(t => t.Suit == "J" && t.Value == "K").Score);
+            Assert.AreEqual(0, player.Hand.First(t => t.Value == "J" && t.Suit == "K").Score);
         }
 
         [Test]

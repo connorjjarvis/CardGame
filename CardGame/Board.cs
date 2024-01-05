@@ -70,6 +70,11 @@ namespace CardGame
                 {
                     return new Error("Card not recognised: " + card);
                 }
+
+                if (card.Trim().Length != 2)
+                {
+                    return new Error("Invalid input string: " + card);
+                }
             }
 
             foreach (string checkCard in cards)
